@@ -1,1 +1,40 @@
-<p>home works!</p>
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort</mat-label>
+        <mat-select
+        panelClass="sort-select"
+        [(ngModel)]="sort"
+        >
+           <mat-option value="name">Name</mat-option>
+           <mat-option value="-released">Released</mat-option> 
+           <mat-option value="-added">Added</mat-option>
+           <mat-option value="-created">Created</mat-option>
+           <mat-option value="-updated">Updated</mat-option>
+           <mat-option value="-rating">Rating</mat-option>
+           <mat-option value="-metacritic">Metacritic</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="games">
+    <div class="game">
+        <div class="game-thumb-container">
+            <img
+              class="game-thumbnail"
+              src="https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/homepage/common/bf-2042-section-bg-homepage-hero-keyart-xl.jpg.adapt.1920w.jpg"  
+              alt="thumbnail"  
+            />
+        </div>
+        <div class="game-description">
+            <p class="game-name">Name</p>
+            <div class="game-platforms">
+                <img
+                    class="game-platform"
+                    src="https://cdn-icons-png.flaticon.com/512/1/1321.png"
+                    alt="slug"
+                />
+            </div>
+        </div>
+    
+    </div>
+</div>
